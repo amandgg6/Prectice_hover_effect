@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* overflow: hidden; */
+            /* border: 2px solid red; */
+            /* height: 600px; */
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            font-weight: 500;
+            background-color: crimson;
+            color: whitesmoke;
+            cursor: pointer;
+
+        }
+
+        #box1,
+        #box2,
+        #box3,
+        #box4,
+        #box5,
+        #box6 {
+            transition: all 0.5s linear;
+
+        }
+
+        #box1:hover {
+            background-color: white;
+            color: crimson;
+
+        }
+
+        #box2:hover {
+            color: black;
+        }
+
+        #box3:hover {
+            background-color: black;
+        }
+
+        #box4:hover {
+            box-shadow: 6px 6px 10px black;
+            /* border-color: white; */
+        }
+
+        #box5:hover {
+            height: 300px;
+        }
+        #box6:hover {
+            width: 150px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <dic class="box" id="box1">Hover Me</dic>
+        <dic class="box" id="box2">Hover Me</dic>
+        <dic class="box" id="box3">Hover Me</dic>
+        <dic class="box" id="box4">Hover Me</dic>
+        <dic class="box" id="box5">Hover Me</dic>
+        <dic class="box" id="box6">Hover Me</dic>
+    </div>
+</body>
+
+</html>
